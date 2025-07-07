@@ -1,0 +1,38 @@
+// AI Utilities
+
+/* RESPONSIVE SHOW HIDE INLINE */
+.large-show,
+.medium-show,
+.small-hide {
+	display: none;
+	@include breakpoint(medium) {
+		display: inline;
+	}
+}
+
+.medium-hide,
+.small-show {
+	display: inline;
+	@include breakpoint(medium) {
+		display: none;
+	}
+}
+
+.medium-hide {
+	@include breakpoint(large) {
+		display: inline;
+	}
+}
+
+.medium-show {
+	@include breakpoint(large) {
+		display: none;
+	}
+}
+
+.large-show {
+	display: none;
+	@include breakpoint(large) {
+		display: inline;
+	}
+}

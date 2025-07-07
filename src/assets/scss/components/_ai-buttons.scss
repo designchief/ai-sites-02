@@ -1,0 +1,56 @@
+/* BUTTONS */
+.button {
+
+  text-transform: uppercase;
+  font-weight: 500;
+
+  &:not(.expanded) {
+    min-width: 10rem;
+  }
+
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1;
+    color: $text-colour;
+    display: block;
+      margin-bottom: 0.4rem;
+      text-align: center;
+  }
+
+  &.white {
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      background-color: get-color(primary);
+      color: $white;
+      * {
+        color: $white;
+      }
+    }
+
+  }
+
+  &.hollow {
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+
+  }
+}
+
+.button-group {
+  @include breakpoint(medium) {
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+}

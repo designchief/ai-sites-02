@@ -1,0 +1,29 @@
+/* NAVIGATION */
+
+
+.ui-menu {
+
+  .ui {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input[type=search] {
+      margin-top: 1.2rem;
+    }
+  }
+
+  li {
+    border-left: 1px solid $grey-03;
+
+    &.search {
+      border-left: 0px solid $grey-03;
+    }
+  }
+
+  .menu-text {
+    font-weight: normal;
+  }
+
+}

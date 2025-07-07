@@ -1,0 +1,131 @@
+/* CLIENT APP SPECIFIC */
+.client-app {
+
+  background-color: $grey-01;
+
+  // GRIDS
+  .content-grid {
+    @include xy-grid();
+  }
+
+  .main-content {
+    @include xy-cell();
+    @include breakpoint(medium) {
+      @include xy-cell($size:auto, $gutters:rem-calc(0));
+      @include xy-cell-block($vertical:true);
+    }
+    padding-bottom: 30rem;
+    background-color: $grey-01;
+    @include breakpoint(medium) {
+      padding-top: $global-padding*2;
+    }
+    .content-block {
+      padding-top: $global-padding;
+    }
+  }
+
+  .sidebar {
+    @include xy-cell();
+    @include breakpoint(medium) {
+      @include xy-cell($size:shrink, $gutters:rem-calc(0));
+      @include xy-cell-block($vertical:true);
+    }
+    background-color: $grey-02;
+    max-width: 24rem;
+
+    p {
+      line-height: 1.2;
+    }
+  }
+
+  footer {
+    background: $white;
+  }
+
+}
+
+.content-block {
+  @include callout-base;
+  background-color: $white;
+
+  @include breakpoint(medium) {
+    padding: $global-padding*2;
+  }
+
+  &.highlight {
+    background-color: $grey-08;
+
+    * {
+      color: $white;
+    }
+
+    .stat {
+      line-height: 1.4em;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  &.customer {
+    .menu {
+      margin-top: $global-padding;
+    }
+  }
+}
+
+.block-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.data-list {
+  @include xy-grid;
+  @include xy-grid-layout(1,$gutters:rem-calc(4));
+  line-height: 1.2;
+
+  &.col-2 {
+      @include xy-grid-layout(2,$gutters:rem-calc(4));
+  }
+
+  &.col-3 {
+      @include xy-grid-layout(3,$gutters:rem-calc(4));
+  }
+
+
+  > .cell {
+    background-color: $grey-01;
+    padding: $global-padding/2;
+    margin-bottom: rem-calc(4);
+  }
+
+  &.justify {
+    > .cell {
+      text-align: right;
+
+      .title {
+        float: left;
+      }
+    }
+  }
+}
+
+.data-list {
+  .stat {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: .2rem;
+  }
+}
+
+.reveal {
+  @include breakpoint(medium) {
+    padding: $global-padding*2;
+  }
+}
+
+.text-link {
+  font-weight: bold;
+}

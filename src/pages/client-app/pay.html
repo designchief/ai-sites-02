@@ -1,0 +1,62 @@
+---
+layout: ai-client-app
+product: client-app pay
+header-title: Payment
+amount-due: €123.45
+---
+
+<div class="main-content cell">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell">
+        <h1 class="block-header">#NEW1234567</h1>
+      </div>
+      <div class="cell content-block">
+        <h3 class="block-header">Payment Details</h3>
+        <form>
+          <div class="grid-x grid-padding-x align-center">
+            <div class="medium-6 cell">
+              <label>Amount due
+                <input type="text" placeholder="{{amount-due}}">
+              </label>
+              <label>Name on card
+                <input type="text" placeholder="Full Name">
+              </label>
+              <label>Card details
+                <input type="text" placeholder="...">
+              </label>
+              <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                  <label>Expiry
+                    <input type="text" placeholder="{{amount-due}}">
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <label>CV2
+                    <input type="text" placeholder="Full Name">
+                  </label>
+                </div>
+              </div>
+              <label>Notes
+                <textarea placeholder="Notes here..."></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="button-group small align-center">
+            <a class="button">Continue</a>
+            <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidebar cell">
+  <div class="grid-x">
+    {{> action-sidebar-02}}
+    {{> customer-sidebar}}
+  </div>
+
+
+</div>

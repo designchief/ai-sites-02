@@ -1,0 +1,104 @@
+---
+layout: ai-client-app
+product: client-app edit
+header-title: Edit
+amount-due: €123.45
+---
+
+<div class="main-content cell">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell">
+        <h1 class="block-header">#DMR1234567</h1>
+        <ul class="accordion" data-accordion>
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#personalDetails" class="accordion-title">Customer</a>
+            <div class="accordion-content" data-tab-content id="personalDetails">
+              <form>
+                <div class="grid-x grid-padding-x align-center">
+                  <div class="medium-6 cell">
+                    <dl>
+                      <dt>Name:</dt>
+                      <dd>Customer FullName</dd>
+                      <dt>Address:</dt>
+                      <dd>Customer Address</dd>
+                      <dt>Email:</dt>
+                      <dd>Customer Email</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="grid-x grid-padding-x align-center">
+                  <div class="medium-6 cell">
+                    <label>Notes
+                      <textarea placeholder="Notes here..."></textarea>
+                    </label>
+                  </div>
+                </div>
+                <div class="button-group small align-center">
+                  <a class="button">Edit</a>
+                  <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#vehicleDetails" class="accordion-title">Vehicle</a>
+            <div class="accordion-content" data-tab-content id="vehicleDetails">
+              <form>
+                <div class="grid-x grid-padding-x align-center">
+                  <div class="medium-6 cell">
+                    <dl>
+                      <dt>Car Registration:</dt>
+                      <dd>11D1234</dd>
+                      <dt>Policy Renewal Date:</dt>
+                      <dd>07/010/2018</dd>
+                      <dt>Balance:</dt>
+                      <dd>€123.45</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="grid-x grid-padding-x align-center">
+                  <div class="medium-6 cell">
+                    <label>Notes
+                      <textarea placeholder="Notes here..."></textarea>
+                    </label>
+                  </div>
+                </div>
+                <div class="button-group small align-center">
+                  <a class="button">Edit</a>
+                  <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#driverDetails" class="accordion-title">Driver</a>
+            <div class="accordion-content" data-tab-content id="driverDetails">
+              {{> form-placeholder-01}}
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#policyCover" class="accordion-title">Cover</a>
+            <div class="accordion-content" data-tab-content id="policyCover">
+              {{> form-placeholder-01}}
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#policyHistory" class="accordion-title">Policy History</a>
+            <div class="accordion-content" data-tab-content id="policyHistory">
+              {{> form-placeholder-01}}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidebar cell">
+  <div class="grid-x">
+    {{> action-sidebar-01}}
+    {{> customer-sidebar}}
+  </div>
+
+
+</div>

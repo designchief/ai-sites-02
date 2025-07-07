@@ -1,0 +1,30 @@
+/* HEADER */
+header {
+  .top-bar {
+    padding: 0;
+
+    .menu li a,
+    .menu-text {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: rem-calc(60);
+      height: rem-calc(60);
+      min-width: rem-calc(60);
+      @include breakpoint(medium) {
+        line-height: rem-calc(80);
+        height: rem-calc(80);
+        min-width: rem-calc(80);
+      }
+    }
+
+    .menu-text {
+      font-weight: normal;
+
+      &.header-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
