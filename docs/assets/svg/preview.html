@@ -1,0 +1,315 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Icons Preview!</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-image: linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(transparent 75%, #eee 75%), linear-gradient(transparent 75%, #eee 75%);
+				width: auto;
+				background-size: 10px 10px;
+			}
+		</style>
+		<script>
+			/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+!function(){function e(e,t){function n(){!o&&t&&(o=!0,t.call(e))}var o;e.addEventListener&&e.addEventListener("load",n),e.attachEvent&&e.attachEvent("onload",n),"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(e){"use strict";var t=function(t,n,o){function r(e){if(d.body)return e();setTimeout(function(){r(e)})}function a(){c.addEventListener&&c.removeEventListener("load",a),c.media=o||"all"}var i,d=e.document,c=d.createElement("link");if(n)i=n;else{var s=(d.body||d.getElementsByTagName("head")[0]).childNodes;i=s[s.length-1]}var u=d.styleSheets;c.rel="stylesheet",c.href=t,c.media="only x",r(function(){i.parentNode.insertBefore(c,n?i:i.nextSibling)});var l=function(e){for(var t=c.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){l(e)})};return c.addEventListener&&c.addEventListener("load",a),c.onloadcssdefined=l,l(a),c};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(t){var n=function(o,r){"use strict";if(o&&3===o.length){var a=t.navigator,i=t.document,d=t.Image,c=!(!i.createElementNS||!i.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!i.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),s=new d;s.onerror=function(){n.method="png",n.href=o[2],loadCSS(o[2])},s.onload=function(){var t=1===s.width&&1===s.height,a=o[t&&c?0:t?1:2];n.method=t&&c?"svg":t?"datapng":"png",n.href=a,e(loadCSS(a),r)},s.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",i.documentElement.className+=" grunticon"}};n.loadCSS=loadCSS,n.onloadCSS=e,t.grunticon=n}(this),function(e,t){"use strict";var n,o=t.document,r=function(e){if(o.attachEvent?"complete"===o.readyState:"loading"!==o.readyState)e();else{var t=!1;o.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},i=function(e,t){if(n&&!t)return n;n={};var o,r,a,i,d,c;if(!(o=e.sheet))return n;r=o.cssRules?o.cssRules:o.rules;for(var s=0;s<r.length;s++)a=r[s].cssText,i="grunticon:"+r[s].selectorText,(d=a.split(");")[0].match(/US\-ASCII\,([^"']+)/))&&d[1]&&(c=decodeURIComponent(d[1]),n[i]=c);return n},d=function(e,t){var n,r,a,i,d;t?n=e:(t=e,n=o),i="data-grunticon-embed";for(var c in t){d=c.slice("grunticon:".length);try{r=n.querySelectorAll(d)}catch(e){continue}a=[];for(var s=0;s<r.length;s++)null!==r[s].getAttribute(i)&&a.push(r[s]);if(a.length)for(s=0;s<a.length;s++)a[s].innerHTML=t[c],a[s].style.backgroundImage="none",a[s].removeAttribute(i)}return a},c=function(t,n){"svg"===e.method&&r(function(){var o=i(a(e.href));"function"==typeof n?(d(t,o),n()):d(o),"function"==typeof t&&t()})};e.embedIcons=d,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=c,e.embedSVG=c}(grunticon,this),function(e,t){"use strict";var n=t.document,o=function(e,n){var o=new t.XMLHttpRequest;return"withCredentials"in o?o.open("GET",e,!0):void 0!==t.XDomainRequest&&(o=new t.XDomainRequest,o.open("GET",e)),n&&(o.onload=n),o.send(),o},r=function(t){"svg"===e.method&&e.ready(function(){o(e.href,function(){var o=n.createElement("style");o.innerHTML=this.responseText;var r=e.getCSS(e.href);r&&(r.parentNode.insertBefore(o,r),r.parentNode.removeChild(r),e.embedIcons(e.getIcons(o)),"function"==typeof t&&t())})})};e.ajaxGet=o,e.svgLoadedCORSCallback=r,e.embedSVGCors=r}(grunticon,this)}();
+			
+			grunticon(["svg.data.svg.css", "svg.data.png.css", "svg.fallback.css"], grunticon.svgLoadedCallback);
+		</script>
+		<noscript><link href="svg.fallback.css" rel="stylesheet"></noscript>
+	</head>
+	<body>
+
+		<h1>CUSTOM PREVIEW - you can change this in the previewTemplate option</h1>
+			<pre><code>.icon-SUV-car:</code></pre><div class="icon-SUV-car" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-Soccer:</code></pre><div class="icon-Soccer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-Voice_of_the_Customer:</code></pre><div class="icon-Voice_of_the_Customer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-a-z:</code></pre><div class="icon-a-z" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-allianz-logo:</code></pre><div class="icon-allianz-logo" style="width: 510.2px; height: 226.8px;" ></div><hr/>
+			<pre><code>.icon-animal-cat:</code></pre><div class="icon-animal-cat" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-animal-dog:</code></pre><div class="icon-animal-dog" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-animal-horse:</code></pre><div class="icon-animal-horse" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-animal-hunting-deer:</code></pre><div class="icon-animal-hunting-deer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-animal-paw:</code></pre><div class="icon-animal-paw" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-arrow-direction-path:</code></pre><div class="icon-arrow-direction-path" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-at-sign:</code></pre><div class="icon-at-sign" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-balance-scale:</code></pre><div class="icon-balance-scale" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-bank-monument-info:</code></pre><div class="icon-bank-monument-info" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-battery:</code></pre><div class="icon-battery" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-bed:</code></pre><div class="icon-bed" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-bike:</code></pre><div class="icon-bike" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-board-paper-note:</code></pre><div class="icon-board-paper-note" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-book:</code></pre><div class="icon-book" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-brain:</code></pre><div class="icon-brain" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-broken-glass:</code></pre><div class="icon-broken-glass" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-broken-window:</code></pre><div class="icon-broken-window" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-broom-clean:</code></pre><div class="icon-broom-clean" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-buggy:</code></pre><div class="icon-buggy" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-building:</code></pre><div class="icon-building" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-bullhorn:</code></pre><div class="icon-bullhorn" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-calculator:</code></pre><div class="icon-calculator" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-calendar:</code></pre><div class="icon-calendar" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-camera:</code></pre><div class="icon-camera" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-candle:</code></pre><div class="icon-candle" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car-accident:</code></pre><div class="icon-car-accident" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car-front:</code></pre><div class="icon-car-front" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car-small:</code></pre><div class="icon-car-small" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car-tacho-fast:</code></pre><div class="icon-car-tacho-fast" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car-trailer:</code></pre><div class="icon-car-trailer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-car:</code></pre><div class="icon-car" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-caravan:</code></pre><div class="icon-caravan" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-certificate:</code></pre><div class="icon-certificate" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-check-paper:</code></pre><div class="icon-check-paper" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-check:</code></pre><div class="icon-check" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-city:</code></pre><div class="icon-city" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cleanup-trash:</code></pre><div class="icon-cleanup-trash" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-clock:</code></pre><div class="icon-clock" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cloud:</code></pre><div class="icon-cloud" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cog-wheel:</code></pre><div class="icon-cog-wheel" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cog-wheels:</code></pre><div class="icon-cog-wheels" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-coins-money:</code></pre><div class="icon-coins-money" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-communication:</code></pre><div class="icon-communication" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-computer:</code></pre><div class="icon-computer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-couch:</code></pre><div class="icon-couch" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-credit-card:</code></pre><div class="icon-credit-card" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cross-triangle:</code></pre><div class="icon-cross-triangle" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-cross:</code></pre><div class="icon-cross" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-danger:</code></pre><div class="icon-danger" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-data-exchange:</code></pre><div class="icon-data-exchange" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-diversity:</code></pre><div class="icon-diversity" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-dollar:</code></pre><div class="icon-dollar" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-door:</code></pre><div class="icon-door" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-electric-plug:</code></pre><div class="icon-electric-plug" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-excavator:</code></pre><div class="icon-excavator" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-expensive-objects-jewelery:</code></pre><div class="icon-expensive-objects-jewelery" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-eye-overview-sight:</code></pre><div class="icon-eye-overview-sight" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-family:</code></pre><div class="icon-family" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-folder:</code></pre><div class="icon-folder" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-guide-navigation:</code></pre><div class="icon-guide-navigation" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-hand-click-info:</code></pre><div class="icon-hand-click-info" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-hand-finger-pointing:</code></pre><div class="icon-hand-finger-pointing" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-hand-get-money:</code></pre><div class="icon-hand-get-money" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-hand-thumbs-up:</code></pre><div class="icon-hand-thumbs-up" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-headset-support:</code></pre><div class="icon-headset-support" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-health-bag-doctor:</code></pre><div class="icon-health-bag-doctor" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-health-stethoscope:</code></pre><div class="icon-health-stethoscope" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-heart-employee-engagement:</code></pre><div class="icon-heart-employee-engagement" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-heart:</code></pre><div class="icon-heart" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-helmet:</code></pre><div class="icon-helmet" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-help-information:</code></pre><div class="icon-help-information" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-help-question:</code></pre><div class="icon-help-question" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-help:</code></pre><div class="icon-help" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-home-office:</code></pre><div class="icon-home-office" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-hourglass:</code></pre><div class="icon-hourglass" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-broken-window:</code></pre><div class="icon-house-broken-window" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-fire:</code></pre><div class="icon-house-fire" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-important:</code></pre><div class="icon-house-important" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-money:</code></pre><div class="icon-house-money" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-safe:</code></pre><div class="icon-house-safe" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house-water-damage:</code></pre><div class="icon-house-water-damage" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-house:</code></pre><div class="icon-house" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-important-info:</code></pre><div class="icon-important-info" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-info-sheet:</code></pre><div class="icon-info-sheet" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-injury-plaster:</code></pre><div class="icon-injury-plaster" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-job-processes:</code></pre><div class="icon-job-processes" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-law:</code></pre><div class="icon-law" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-light-bulb-idea:</code></pre><div class="icon-light-bulb-idea" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-locate-position:</code></pre><div class="icon-locate-position" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-lock:</code></pre><div class="icon-lock" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-mail:</code></pre><div class="icon-mail" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-money-banknote:</code></pre><div class="icon-money-banknote" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-money-exchange:</code></pre><div class="icon-money-exchange" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-money-suitcase:</code></pre><div class="icon-money-suitcase" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-motorcycle:</code></pre><div class="icon-motorcycle" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-mouse:</code></pre><div class="icon-mouse" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-newspaper:</code></pre><div class="icon-newspaper" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-notebook:</code></pre><div class="icon-notebook" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-office-chair:</code></pre><div class="icon-office-chair" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-pages-documents:</code></pre><div class="icon-pages-documents" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-paper-document:</code></pre><div class="icon-paper-document" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-paper-lock:</code></pre><div class="icon-paper-lock" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-partner-handshake:</code></pre><div class="icon-partner-handshake" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-pen:</code></pre><div class="icon-pen" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-pension-rocker-chair:</code></pre><div class="icon-pension-rocker-chair" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-people-collaboration:</code></pre><div class="icon-people-collaboration" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-people-communication-external:</code></pre><div class="icon-people-communication-external" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-people-communication-internal:</code></pre><div class="icon-people-communication-internal" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-people-connect:</code></pre><div class="icon-people-connect" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-person-heart-people-love:</code></pre><div class="icon-person-heart-people-love" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-person-manager:</code></pre><div class="icon-person-manager" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-phone-call:</code></pre><div class="icon-phone-call" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-plain:</code></pre><div class="icon-plain" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-plus-minus:</code></pre><div class="icon-plus-minus" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-plus:</code></pre><div class="icon-plus" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-present:</code></pre><div class="icon-present" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-puzzle-pieces:</code></pre><div class="icon-puzzle-pieces" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-puzzle:</code></pre><div class="icon-puzzle" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-radio:</code></pre><div class="icon-radio" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Hydro power-(minus):</code></pre><div class="icon-renewable_icon_bounding box_Hydro power-(minus)" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Hydro power-(neutral):</code></pre><div class="icon-renewable_icon_bounding box_Hydro power-(neutral)" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Hydro power-(plus):</code></pre><div class="icon-renewable_icon_bounding box_Hydro power-(plus)" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Power Pylon:</code></pre><div class="icon-renewable_icon_bounding box_Power Pylon" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Solar Power-Modules:</code></pre><div class="icon-renewable_icon_bounding box_Solar Power-Modules" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Thermal Power-Plant:</code></pre><div class="icon-renewable_icon_bounding box_Thermal Power-Plant" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Wind Turbine-(offshore):</code></pre><div class="icon-renewable_icon_bounding box_Wind Turbine-(offshore)" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-renewable_icon_bounding box_Wind Turbine-(onshore):</code></pre><div class="icon-renewable_icon_bounding box_Wind Turbine-(onshore)" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-repair:</code></pre><div class="icon-repair" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-rewards:</code></pre><div class="icon-rewards" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-rocket:</code></pre><div class="icon-rocket" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-save:</code></pre><div class="icon-save" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-search-document:</code></pre><div class="icon-search-document" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-search:</code></pre><div class="icon-search" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-share-chart:</code></pre><div class="icon-share-chart" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-share-graph-arrow-down:</code></pre><div class="icon-share-graph-arrow-down" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-share-graph-arrow-up:</code></pre><div class="icon-share-graph-arrow-up" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-sharing-connect:</code></pre><div class="icon-sharing-connect" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-shield-hand:</code></pre><div class="icon-shield-hand" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-shield:</code></pre><div class="icon-shield" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-shopping-cart:</code></pre><div class="icon-shopping-cart" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-smartphone:</code></pre><div class="icon-smartphone" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-social-media-facebook-messenger:</code></pre><div class="icon-social-media-facebook-messenger" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-social-media-facebook:</code></pre><div class="icon-social-media-facebook" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-social-media-linkedin:</code></pre><div class="icon-social-media-linkedin" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-social-media-twitter:</code></pre><div class="icon-social-media-twitter" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-social-media-whatsapp:</code></pre><div class="icon-social-media-whatsapp" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-sport-sailing-ship:</code></pre><div class="icon-sport-sailing-ship" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-sport-trainer:</code></pre><div class="icon-sport-trainer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-sports-car:</code></pre><div class="icon-sports-car" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-sports:</code></pre><div class="icon-sports" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-star-event:</code></pre><div class="icon-star-event" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-stars-sky-galaxy:</code></pre><div class="icon-stars-sky-galaxy" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-steering-wheel:</code></pre><div class="icon-steering-wheel" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-stock-data-graph:</code></pre><div class="icon-stock-data-graph" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-stove-cooker:</code></pre><div class="icon-stove-cooker" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-strategy:</code></pre><div class="icon-strategy" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-student-school-graduation:</code></pre><div class="icon-student-school-graduation" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-survey:</code></pre><div class="icon-survey" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-tablet-ipad-apps:</code></pre><div class="icon-tablet-ipad-apps" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-target:</code></pre><div class="icon-target" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-thief:</code></pre><div class="icon-thief" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-to-do-list:</code></pre><div class="icon-to-do-list" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-tooth:</code></pre><div class="icon-tooth" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-tv:</code></pre><div class="icon-tv" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_down_black_24px:</code></pre><div class="icon-ui-arrow_down_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_first_page_24px:</code></pre><div class="icon-ui-arrow_first_page_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_last_page_24px:</code></pre><div class="icon-ui-arrow_last_page_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_link_black_24px:</code></pre><div class="icon-ui-arrow_link_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_slide_black_24px:</code></pre><div class="icon-ui-arrow_slide_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-arrow_up_black_24px:</code></pre><div class="icon-ui-arrow_up_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-attach_file_black_24px:</code></pre><div class="icon-ui-attach_file_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-bookmark_border_out_24px:</code></pre><div class="icon-ui-bookmark_border_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-calendar_big_black_32px:</code></pre><div class="icon-ui-calendar_big_black_32px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-calendar_out_24px:</code></pre><div class="icon-ui-calendar_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-call_phone_black2_24px:</code></pre><div class="icon-ui-call_phone_black2_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-check_black_24px:</code></pre><div class="icon-ui-check_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-check_circle_black_24px:</code></pre><div class="icon-ui-check_circle_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-close_black_24px:</code></pre><div class="icon-ui-close_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-close_black_circ_24px:</code></pre><div class="icon-ui-close_black_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-credit_card_out_24px:</code></pre><div class="icon-ui-credit_card_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-delete_out_24px:</code></pre><div class="icon-ui-delete_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-download_24px:</code></pre><div class="icon-ui-download_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-error_black_24px:</code></pre><div class="icon-ui-error_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-error_out_24px:</code></pre><div class="icon-ui-error_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-expand_black_24px:</code></pre><div class="icon-ui-expand_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-expand_more_black_24px:</code></pre><div class="icon-ui-expand_more_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-file_out_24px:</code></pre><div class="icon-ui-file_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-fileclaim_m_black_24px:</code></pre><div class="icon-ui-fileclaim_m_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-fileclaim_m_out_24px:</code></pre><div class="icon-ui-fileclaim_m_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-gmore_horiz_black_24px:</code></pre><div class="icon-ui-gmore_horiz_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-gmore_vert_black_24px:</code></pre><div class="icon-ui-gmore_vert_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-help_black_24px:</code></pre><div class="icon-ui-help_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-help_out_24px:</code></pre><div class="icon-ui-help_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-info_black_24px:</code></pre><div class="icon-ui-info_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-info_out_24px:</code></pre><div class="icon-ui-info_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-list_black_24px:</code></pre><div class="icon-ui-list_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-location_black_24px:</code></pre><div class="icon-ui-location_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-lock_black_24px:</code></pre><div class="icon-ui-lock_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-lock_out_24px:</code></pre><div class="icon-ui-lock_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-mail_black_24px:</code></pre><div class="icon-ui-mail_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-mail_out_24px:</code></pre><div class="icon-ui-mail_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-menu_black_24px:</code></pre><div class="icon-ui-menu_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-message_black_24px:</code></pre><div class="icon-ui-message_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-not_available_black_24px:</code></pre><div class="icon-ui-not_available_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_black_24px:</code></pre><div class="icon-ui-persona_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_business_black_24px:</code></pre><div class="icon-ui-persona_business_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_business_out_24px:</code></pre><div class="icon-ui-persona_business_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_m_black_24px:</code></pre><div class="icon-ui-persona_m_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_m_out_24px:</code></pre><div class="icon-ui-persona_m_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-persona_out_24px_V4:</code></pre><div class="icon-ui-persona_out_24px_V4" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-phone_24px_V4:</code></pre><div class="icon-ui-phone_24px_V4" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-plus_black_24px:</code></pre><div class="icon-ui-plus_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-print_out_24px:</code></pre><div class="icon-ui-print_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-problem_alert_black_24px:</code></pre><div class="icon-ui-problem_alert_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-search_out_24px:</code></pre><div class="icon-ui-search_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-settings_black_24px:</code></pre><div class="icon-ui-settings_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-share_black_24px:</code></pre><div class="icon-ui-share_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_faceb_24px:</code></pre><div class="icon-ui-social_faceb_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_faceb_circ_24px:</code></pre><div class="icon-ui-social_faceb_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_faceb_messenger_24px:</code></pre><div class="icon-ui-social_faceb_messenger_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_google_24px:</code></pre><div class="icon-ui-social_google_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_googleplus_circ_24px:</code></pre><div class="icon-ui-social_googleplus_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_insta_24px:</code></pre><div class="icon-ui-social_insta_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_insta_circ_24px:</code></pre><div class="icon-ui-social_insta_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_linkedIn_circ_24px:</code></pre><div class="icon-ui-social_linkedIn_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_linkedin_24px:</code></pre><div class="icon-ui-social_linkedin_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_mail_circ_24px:</code></pre><div class="icon-ui-social_mail_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_messenger_circ_24px:</code></pre><div class="icon-ui-social_messenger_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_tweet_24px:</code></pre><div class="icon-ui-social_tweet_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_tweet_circ_24px:</code></pre><div class="icon-ui-social_tweet_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_whatsapp_24px:</code></pre><div class="icon-ui-social_whatsapp_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_whatsapp_circ_24px:</code></pre><div class="icon-ui-social_whatsapp_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_xing_24px:</code></pre><div class="icon-ui-social_xing_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_xing_circ_24px:</code></pre><div class="icon-ui-social_xing_circ_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_youtube_24px:</code></pre><div class="icon-ui-social_youtube_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-social_youtube_circ2_24px:</code></pre><div class="icon-ui-social_youtube_circ2_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-speech_bubble_24px:</code></pre><div class="icon-ui-speech_bubble_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-star_black_24px:</code></pre><div class="icon-ui-star_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-star_half_24px:</code></pre><div class="icon-ui-star_half_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-star_out_24px:</code></pre><div class="icon-ui-star_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-text_file_out_24px:</code></pre><div class="icon-ui-text_file_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-voicein_out_24px:</code></pre><div class="icon-ui-voicein_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-watch_black_24px:</code></pre><div class="icon-ui-watch_black_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-ui-watch_out_24px:</code></pre><div class="icon-ui-watch_out_24px" style="width: 300px; height: 200px;" ></div><hr/>
+			<pre><code>.icon-umbrella-protection:</code></pre><div class="icon-umbrella-protection" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-video-camera:</code></pre><div class="icon-video-camera" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-wall-balance:</code></pre><div class="icon-wall-balance" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-washer:</code></pre><div class="icon-washer" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-water-tap:</code></pre><div class="icon-water-tap" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-watering-can:</code></pre><div class="icon-watering-can" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-wheelchair:</code></pre><div class="icon-wheelchair" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-world-globe:</code></pre><div class="icon-world-globe" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-world-wide-we:</code></pre><div class="icon-world-wide-we" style="width: 24px; height: 24px;" ></div><hr/>
+
+		<h2 id="embedded-svg-option">Embedded SVG option</h2>
+		<p>(The <code>data-grunticon-embed</code> attribute tells grunticon to inject SVG inline):</p>
+
+		<pre><code>icon-burger:</code></pre><div class="icon-burger" data-grunticon-embed style="width: px; height: px;" ></div><hr/>
+
+		<style>
+			.icon-burger {
+				width: 32px;
+				height: 30px;
+				display: inline-block;
+			}
+			  .icon-burger.alt .cheese {
+		                fill: red;
+		            }
+				 .icon-burger.alt .buns {
+		                fill: orange;
+		            }
+				  .icon-burger.alt .burger {
+		                fill: yellow;
+		            }
+		 		 .icon-burger.alt .lettuce {
+		                fill: green;
+		            }
+
+		</style>
+
+		<pre><code>icon-burger (styled variation):</code></pre><div class="icon-burger alt" data-grunticon-embed></div><hr/>
+
+
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Prevent Search Engine Indexing -->
+  <meta name="robots" content="noindex,nofollow">
+  <title>AI Client App - Quote</title>
+  <script>
+  !function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&i.userAgent.indexOf("Chrome")===-1||i.userAgent.indexOf("Series40")!==-1),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t,o=n.document,r="grunticon:",a=function(e){if(o.attachEvent?"complete"===o.readyState:"loading"!==o.readyState)e();else{var n=!1;o.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},i=function(e){return n.document.querySelector('link[href$="'+e+'"]')},c=function(e,n){if(t&&!n)return t;t={};var o,a,i,c,s,d;if(o=e.sheet,!o)return t;a=o.cssRules?o.cssRules:o.rules;for(var l=0;l<a.length;l++)i=a[l].cssText,c=r+a[l].selectorText,s=i.split(");")[0].match(/US\-ASCII\,([^"']+)/),s&&s[1]&&(d=decodeURIComponent(s[1]),t[c]=d);return t},s=function(e,n){var t,a,i,c,s;n?t=e:(n=e,t=o),c="data-grunticon-embed";for(var d in n){s=d.slice(r.length);try{a=t.querySelectorAll(s)}catch(e){continue}i=[];for(var l=0;l<a.length;l++)null!==a[l].getAttribute(c)&&i.push(a[l]);if(i.length)for(l=0;l<i.length;l++)i[l].innerHTML=n[d],i[l].style.backgroundImage="none",i[l].removeAttribute(c)}return i},d=function(n,t){"svg"===e.method&&a(function(){var o=c(i(e.href));"function"==typeof t?(s(n,o),t()):s(o),"function"==typeof n&&n()})};e.embedIcons=s,e.getCSS=i,e.getIcons=c,e.ready=a,e.svgLoadedCallback=d,e.embedSVG=d}(grunticon,this)}();
+  </script>
+  <script>
+  	grunticon(["../assets/svg/svg.data.svg.css", "../assets/svg/svg.data.png.css", "../assets/svg/svg.fallback.css"], grunticon.svgLoadedCallback);
+  </script>
+  <noscript>
+  <link href="../assets/svg/svg.fallback.css" rel="stylesheet">
+  </noscript>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#003781">
+  <meta name="theme-color" content="#f5f6f6">  <link rel="stylesheet" href="/assets/css/app.css?v=1">
+</head>
+
+<body class="client-app quote">
+
+  <div class="grid-y medium-grid-frame">
+    <header class="cell shrink header">
+      <div class="top-bar">
+        <div class="top-bar-left">
+
+          <ul class="menu">
+            <li class="ai-logo"><i class="svg icon-allianz-logo"></i></li>
+            <li class="menu-text header-title">Quote</li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu ui-menu" data-dropdown-menu>
+            <li class="ui search"><input type="search" name="search" placeholder="Search..." class="animated-search-form"></li>
+            <li id="time" class="ui-time menu-text"></li>
+            <li class="has-submenu">
+              <a href="#0">User Name</a>
+              <!-- <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">User Options</a></li>
+                <li><a href="#0">Logout</a></li>
+              </ul> -->
+            </li>
+            <li class="ui"><a data-open="cancelModal01"><i class="svg icon-ui-close_black_24px" data-grunticon-embed></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="cell medium-auto medium-cell-block-container">
+      <div class="content-grid grid-x">
+        
+        <div class="main-content cell">
+          <div class="grid-container">
+            <div class="grid-x">
+              <div class="cell">
+                <h1 class="block-header">#NEW1234567</h1>
+                <ul class="accordion" data-accordion>
+                  <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#acceptance" class="accordion-title">Acceptance</a>
+                    <div class="accordion-content" data-tab-content id="acceptance">
+                      <form>
+                        <div class="grid-x grid-padding-x align-center">
+                          <div class="medium-6 cell">
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Notes
+                              <textarea placeholder="Notes here..."></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="button-group small align-center">
+                          <a class="button">Continue</a>
+                          <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#personalDetails" class="accordion-title">Personal Details</a>
+                    <div class="accordion-content" data-tab-content id="personalDetails">
+                      <form>
+                        <div class="grid-x grid-padding-x align-center">
+                          <div class="medium-6 cell">
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Notes
+                              <textarea placeholder="Notes here..."></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="button-group small align-center">
+                          <a class="button">Continue</a>
+                          <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#vehicleDetails" class="accordion-title">Vehicle Details</a>
+                    <div class="accordion-content" data-tab-content id="vehicleDetails">
+                      <form>
+                        <div class="grid-x grid-padding-x align-center">
+                          <div class="medium-6 cell">
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Notes
+                              <textarea placeholder="Notes here..."></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="button-group small align-center">
+                          <a class="button">Continue</a>
+                          <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#driverDetails" class="accordion-title">Driver Details</a>
+                    <div class="accordion-content" data-tab-content id="driverDetails">
+                      <form>
+                        <div class="grid-x grid-padding-x align-center">
+                          <div class="medium-6 cell">
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Notes
+                              <textarea placeholder="Notes here..."></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="button-group small align-center">
+                          <a class="button">Continue</a>
+                          <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#policyCover" class="accordion-title">Policy Cover</a>
+                    <div class="accordion-content" data-tab-content id="policyCover">
+                      <form>
+                        <div class="grid-x grid-padding-x align-center">
+                          <div class="medium-6 cell">
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Input Label
+                              <input type="text" placeholder="...">
+                            </label>
+                            <label>Notes
+                              <textarea placeholder="Notes here..."></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="button-group small align-center">
+                          <a class="button">Continue</a>
+                          <a class="button secondary hollow" data-open="cancelModal01">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+        
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar cell">
+          <div class="grid-x">
+            <div class="cell content-block highlight text-center col-2">
+              <div class="grid-x grid-margin-x">
+                <div class="medium-6 cell">
+                  <p>Annual <br><span class="stat">€123.45</span><br>Included 10% online discount</p>
+                </div>
+                <div class="medium-6 cell">
+                  <p>Monthly <br><span class="stat">€23.45</span><br>12 monthly installments</p>
+                </div>
+              </div>
+              <p><a href="../client-app/pay.html" class="button expanded">Pay Now</a></p>
+              <p><a href="" class="button hollow expanded">Send Quote</a></p>
+            </div>
+            <div class="cell content-block transparent customer">
+              <h3 class="block-header">Customer</h3>
+              <div class="data-list justify">
+                <div class="cell"><span class="title">Customer ID</span> #1234567</div>
+                <div class="cell"><span class="title">Name</span> Full Name</div>
+                <div class="cell"><span class="title">Address</span> Address Line 01 <br>Street Address Line 02 <br>Address Line 04 <br>Address Line 04</div>
+              </div>
+              <div class="data-list col-3">
+                <div class="cell"><span class="title">Active <br>Policies</span> <span class="stat">2</span></div>
+                <div class="cell"><span class="title">Average <br>Policy Age</span> <span class="stat">2.75</span></div>
+                <div class="cell"><span class="title">Lifetime <br>Premium</span> <span class="stat">€12,345</span></div>
+                <div class="cell"><span class="title">Lifetime <br>Claims</span> <span class="stat">1</span></div>
+                <div class="cell"><span class="title">Connected <br>Users</span> <span class="stat">2</span></div>
+                <div class="cell"><span class="title">Current <br>Debt</span> <span class="stat">2</span></div>
+              </div>
+              <ul class="menu simple align-center">
+                <li><a href="" class="text-link">Full Profile</a></li>
+              </ul>
+            </div>
+          </div>
+        
+        
+        </div>
+        
+      </div>
+    </div>
+    <footer class="cell shrink footer">
+      <ul class="menu ui-menu align-right">
+        <li><a href="../client-app/">Home</a></li>
+        <li class="menu-text">AI Client App V.01</li>
+      </ul>
+    </footer>
+  </div>
+
+  <div class="reveal" id="cancelModal01" data-reveal>
+    <h3 class="block-header">Confirm Cancel</h3>
+    <label>Notes on cancellation
+      <textarea placeholder="Notes here..."></textarea>
+    </label>
+    <div class="button-group small align-center">
+      <a href="../client-app/" class="button" data-close>Submit</a>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
